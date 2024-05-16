@@ -18,7 +18,7 @@
 - Tambah Swap 1GiB
 - Pemasangan yang dinamis
 - Tuning profile pada server
-- Xray Core by [@Julak_Bantur](https://github.com/sanakstore)
+- Xray Core by [@SANAK STORE](https://github.com/sanakstore)
 - Penambahan fail2ban
 - Auto block sebagian ads indo by default
 - Auto clear log per 3 menit

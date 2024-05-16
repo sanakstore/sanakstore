@@ -883,7 +883,7 @@ print_success "Restart All Service"
 function menu(){
     clear
     print_install "Install Menu Packet"
-    wget --no-check-certificate https://sc3.scvps.biz.id/limit/menu.zip
+    wget --no-check-certificate https://raw.githubusercontent.com/sanakstore/sanakstore/main/limit/menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin

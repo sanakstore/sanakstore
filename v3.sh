@@ -230,7 +230,7 @@ else
 fi
 }
 
-# Julak Bantur
+# SANAK STORE
 clear
 function nginx_install() {
     # // Checking System

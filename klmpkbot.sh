@@ -11,8 +11,8 @@ rm -rf regis
 #install
 apt update && apt upgrade
 #apt install python3 python3-pip git
-apt install python3 -m pip install --upgrade pip
-apt install python3 -m pip install --upgrade Pillow
+install python3 -m pip install --upgrade pip
+install python3 -m pip install --upgrade Pillow
 cd /usr/bin
 wget https://raw.githubusercontent.com/sanakstore/sanakstore/main/bot.zip
 unzip bot.zip
@@ -76,3 +76,5 @@ echo "Setting done"
 clear
 
 echo " Installations complete, type /menu on your bot"
+read -n 1 -s -r -p "Press any key to back on menu"
+menu

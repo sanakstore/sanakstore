@@ -1,6 +1,6 @@
 #!/bin/bash
-NS=$( cat /etc/xray/dns )
-PUB=$( cat /etc/slowdns/server.pub )
+NS=$(cat /etc/xray/dns )
+PUB=$(cat /etc/slowdns/server.pub )
 domain=$(cat /etc/xray/domain)
 #color
 grenbo="\e[92;1m"
@@ -12,13 +12,13 @@ rm -rf regis
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://konohagakure.klmpk.me:81/limit/bot.zip
+wget https://raw.githubusercontent.com/sanakstore/sanakstore/main/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 cd /root
-wget https://konohagakure.klmpk.me:81/regis.zip
+wget https://raw.githubusercontent.com/sanakstore/sanakstore/main/regis.zip
 unzip regis.zip
 rm -rf regis.zip
 pip3 install -r regis/requirements.txt
@@ -32,7 +32,7 @@ echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━�
 echo -e "${grenbo}Tutorial Creat Bot and ID Telegram${NC}"
 echo -e "${grenbo}[*] Creat Bot and Token Bot : @BotFather${NC}"
 echo -e "${grenbo}[*] Info Id Telegram : @MissRose_bot , perintah /info${NC}"
-echo -e "${grenbo}[*] Bot By AndyYuda KLMPK PROJECT${NC}"
+echo -e "${grenbo}[*] Bot By SANAK STORE PROJECT${NC}"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 read -e -p "[*] Input your Bot Token : " bottoken
 read -e -p "[*] Input Your Id Telegram :" admin
@@ -45,7 +45,7 @@ clear
 
 cat > /etc/systemd/system/regis.service << END
 [Unit]
-Description=Simple register - @Andyyuda
+Description=Simple register - @sanakstore
 After=network.target
 
 [Service]
@@ -74,5 +74,3 @@ echo "Setting done"
 clear
 
 echo " Installations complete, type /menu on your bot"
-read -n 1 -s -r -p "Press any key to back on menu"
-menu

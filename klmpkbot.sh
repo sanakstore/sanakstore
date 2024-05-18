@@ -10,7 +10,9 @@ cd /root
 rm -rf regis
 #install
 apt update && apt upgrade
-apt install python3 python3-pip git
+#apt install python3 python3-pip git
+apt install python3 -m pip install --upgrade pip
+apt install python3 -m pip install --upgrade Pillow
 cd /usr/bin
 wget https://raw.githubusercontent.com/sanakstore/sanakstore/main/bot.zip
 unzip bot.zip

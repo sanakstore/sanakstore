@@ -45,7 +45,7 @@ clear
 
 cat > /etc/systemd/system/regis.service << END
 [Unit]
-Description=Simple register - @SANAK STORE
+Description=Simple register - @sanakstore
 After=network.target
 
 [Service]
